@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- This line tells us that we are using HTML5 -->
+<html lang="en"> <!-- Language used in all texts -->
+<head>
+    <meta charset="UTF-8"> <!-- It is encoding type. For now we just need to know it's most commonly used and contain all characters needed for html file -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Basic meta element. Let's leave it for now.-->
+    <!-- CSS element allowing us to resize image adding it as attribute with name "class" and value "resize"
+    https://www.computerhope.com/issues/ch000055.htm -->
+    <style> 
+        img.resize50 {
+        max-width:50%;
+        max-height:50%;
+        }
+
+        img.resize30 {
+        max-width:30%;
+        max-height:30%;
+        }
+    </style>
+    <title>Html beginning</title> <!-- Name on the browser tab -->
+</head>
+
+<body>
+    <h1>Day 1</h1> <!-- We have 6 headings where 1 is the biggest one used mostly for title or main text on page -->
+   
+    <div id="Introducton"> <!-- Tag used to divide file and provide useful ids-->
+        <h2>Let's Start</h2>
+        <p><!-- "p" stands for paragraph. That meas we put here block of text we want to include in given paragraph. -->
+            First of all what do I know and what am I gonna learn. Let's add image from friend and analyze it.<br>
+            <img class="resize50" src="figures/front_dev_diag.png" alt="Front-end Diagram" ><br> <!-- <img> allows to input image from local or external host -->
+            Now I can set my learning process to learn from basics concepts of web developing up to more difficult and complex ideas.<br><br>  
+        </p>
+    
+        <h3>Learning idea</h3>
+        <p>
+            For as little as I know starting from complete basics will be best. First I setted up Visual Studio Code for easier coding with real live preview and created repository on GitHub.
+            That lead me to:
+            <a href="https://github.com/helloroman/od-czego-zaczac-nauke"><em>"Od czego zacząć?"</em></a> <!-- <a> is a hyperlink holding tag and <em> allows for italic when <strong> bolds words -->
+            , which is really interesting file providing various websites to help newbies like me. At this point i decided on creating learning schedule not to get lost in case of giving up as I mostly do.
+        </p>
+    
+        <h3>Schedule</h3>
+        <p>
+            Due to lack of any job right now i plan on working few hours a day to see how much I can improve.<br>
+            My learning order will be then:
+            <ol> <!-- Creating ordered, that means numbered, list with <li> listed items -->
+                <li>Basics</li>
+                <ul> <!-- <ul> stands for unordered list that is dotted points -->
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <li>CSS framework - Bootstrap</li>
+                <li>CSS preprocessor - Sass</li>
+                <li>Responsive Web?</li>
+                <li>JavaScript Task Runners</li>
+                <li>What is ES6?</li>
+                <li>Package Manager</li>
+                <li>TypeScript</li>
+                <li>Module Loader/Bundler</li>
+            </ol>
+            <br>
+            Probably order will be change during realization because I don't know half of the words. But let's start from basics now.
+        </p>
+    </div>
+    
+    <div id="basics">
+        <h2>RISE MY SKIL, RISE!!!</h2>
+        <h3>HTML5 vs Old School HTML</h3>
+        <p>
+            So basically what is the difference between things I learned in primary school and ones I am going to learn now? 
+            Generally in 2014 HTML was updated to version 5 facilitating work for web developers. 
+            So many inprovements were introduced that it would take whole page to write about them.<br>
+            But this document is for me to learn how to code and not to write a lot so <a href="https://www.keycdn.com/blog/html-vs-html5">here</a> is a link to learn more about HTML improvement over years.
+        </p>
+
+        <h3>Browser tutorial</h3>
+        <p>
+            I started with Codecademy basic tutorial for HTML. Iam not going to write much about content I found there but highly recommend to check it out <a href="https://www.codecademy.com/">here</a>.
+            <br>
+            What i learned:
+            <ul>
+                <li>What is HTML</li>
+                <li>Basic HTML file build</li>
+                <li>Headings and sub-headings</li>
+                <li><code>&ltp&gt, &ltspan&gt</code> and <code>&ltdiv&gt</code> tags</li>
+                <li><code>&ltbr&gt</code> line break</li>
+                <li>ordered <code>&ltol&gt</code> and unordered <code>&ltul&gt</code> list</li>
+                <li>Linking images and videos</li>
+            </ul>
+            Important links and files used during learning: <br>
+            <a href="https://www.w3schools.com/html/default.asp">w3schools.com</a> - knowledge library
+            <img class="resize30" src="figures/HTML_Anatomy.PNG">
+        </p>
+    </div>
+</body>
+</html>
