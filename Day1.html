@@ -1,6 +1,6 @@
 <!DOCTYPE html> <!-- This line tells us that we are using HTML5 -->
 <html lang="en"> <!-- Language used in all texts -->
-<head>
+<head> <!-- Contains the metadata for a web page. -->
     <meta charset="UTF-8"> <!-- It is encoding type. For now we just need to know it's most commonly used and contain all characters needed for html file -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Basic meta element. Let's leave it for now.-->
     <!-- CSS element allowing us to resize image adding it as attribute with name "class" and value "resize"
@@ -16,29 +16,33 @@
         max-height:30%;
         }
     </style>
-    <title>Html beginning</title> <!-- Name on the browser tab -->
+    <title>Day1 - HTML learning</title> <!-- Name on the browser tab -->
 </head>
 
 <body>
+    <nav>
+        <a href="./index.html">Main Menu</a> | <a href="Day1.html">Day 1</a> | <a href="Day2.html">Day 2</a>
+    </nav>
+
     <h1>Day 1</h1> <!-- We have 6 headings where 1 is the biggest one used mostly for title or main text on page -->
    
     <div id="Introducton"> <!-- Tag used to divide file and provide useful ids-->
-        <h2>Let's Start</h2>
+        <h2 id="start">Let's Start</h2>
         <p><!-- "p" stands for paragraph. That meas we put here block of text we want to include in given paragraph. -->
             First of all what do I know and what am I gonna learn. Let's add image from friend and analyze it.<br>
             <img class="resize50" src="figures/front_dev_diag.png" alt="Front-end Diagram" ><br> <!-- <img> allows to input image from local or external host -->
             Now I can set my learning process to learn from basics concepts of web developing up to more difficult and complex ideas.<br><br>  
         </p>
     
-        <h3>Learning idea</h3>
+        <h3 id="idea">Learning idea</h3>
         <p>
             For as little as I know starting from complete basics will be best. First I setted up Visual Studio Code for easier coding with real live preview and created repository on GitHub.
             That lead me to:
-            <a href="https://github.com/helloroman/od-czego-zaczac-nauke"><em>"Od czego zacząć?"</em></a> <!-- <a> is a hyperlink holding tag and <em> allows for italic when <strong> bolds words -->
+            <a href="https://github.com/helloroman/od-czego-zaczac-nauke" target="_blank"><em>"Od czego zacząć?"</em></a> <!-- <a> is a hyperlink holding tag and <em> allows for italic when <strong> bolds words -->
             , which is really interesting file providing various websites to help newbies like me. At this point i decided on creating learning schedule not to get lost in case of giving up as I mostly do.
         </p>
     
-        <h3>Schedule</h3>
+        <h3 id="schedule">Schedule</h3>
         <p>
             Due to lack of any job right now i plan on working few hours a day to see how much I can improve.<br>
             My learning order will be then:
@@ -70,7 +74,7 @@
             So basically what is the difference between things I learned in primary school and ones I am going to learn now? 
             Generally in 2014 HTML was updated to version 5 facilitating work for web developers. 
             So many inprovements were introduced that it would take whole page to write about them.<br>
-            But this document is for me to learn how to code and not to write a lot so <a href="https://www.keycdn.com/blog/html-vs-html5">here</a> is a link to learn more about HTML improvement over years.
+            But this document is for me to learn how to code and not to write a lot so <a href="https://www.keycdn.com/blog/html-vs-html5" target="_blank">here</a> is a link to learn more about HTML improvement over years.
         </p>
 
         <h3>Browser tutorial</h3>
@@ -88,7 +92,7 @@
                 <li>Linking images and videos</li>
             </ul>
             <strong>Important links and files used during learning:</strong><br>
-            <a href="https://www.w3schools.com/html/default.asp">w3schools.com</a> - knowledge library <br><br>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">w3schools.com</a> - knowledge library <br><br>
             <img class="resize30" src="figures/HTML_Anatomy.PNG">
         </p>
     </div>

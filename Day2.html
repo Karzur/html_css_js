@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 - more HTML</title>
+</head>
+<body>
+    <nav><!-- Tag adding navigation bar to your page -->
+        <a href="./index.html">Main Menu</a> | <a href="Day1.html">Day 1</a> | <a href="Day2.html">Day 2</a>
+    </nav>
+
+    <h1>Day 2</h1>
+    <h2 id="">Let's continue</h2>
+    First thing would be continuation of Codecademy course. Most tags and attributes learned today i added to Day 1 page so here I am going to put only list of it.<br>
+        
+    <h3>Hyperlinks and styling</h3>
+    Learning progress:<br>
+    <ul>
+        <li>Learning about <code>&lt!DOCTYPE html&gt</code>declaration, <code>&lthtml&gt</code> and <code>&lthead&gt</code>tags </li>
+        <li>Change of tab title</li>
+        <li>Adding hyperlinks to text as well as images</li>
+        <li>Getting to know "id" attribute and how to navigate with it on webpage with anchors</li>
+        <li>General HTML page layout</li>
+    </ul>
+
+    <h3>HTML Tables</h3>
+    I decided to copy my wishlist from Steam to have some data to work on. Also I won't be using CSS due to lack of knowledge so table will be raw text.<br>
+
+    <br>
+    <table> <!-- Table tag -->
+        <thead> <!-- thead tells us that this part is first row (header) of our table -->
+            <tr><!-- tag for adding table row -->
+                <th scope="col">Game name</th><!-- tag for adding table heading element -->
+                <th scope="col">Release date</th>
+                <th scope="col">Price</th>                
+            </tr>
+        </thead>
+        <tbody><!-- body of our table -->
+            <tr>
+                <td>The Binding of Isaac</td><!-- adding table data(td)/element -->
+                <td>4 NOV 2014</td>
+                <td>53,99PLN</td>                
+            </tr>
+            <tr>
+                <td>Heroes of Might and Magic III - HD Edition</td>
+                <td>4 NOV 2014</td>
+                <td>59,90PLN</td>                
+            </tr>
+            <tr>
+                <td>Borderlands 3</td>
+                <td>13 MAR 2020</td>
+                <td>259,90PLN</td>                
+            </tr>
+            <tr>
+                <td>Darksiders III</td>
+                <td>27 NOV 2018</td>
+                <td>214,99PLN</td>                
+            </tr>
+            <tr>
+                <td>Skul: The Hero Slayer</td>
+                <td>27 FEB 2020</td>
+                <td>64,99PLN</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- Last of 3 elements from table (bottom part) -->
+            <tr></tr>
+            <tr>
+                <td rowspan="2">Total price</td> <!-- Allows one <td> to be spread in 2 rows/columns (rowspan/colspan) -->
+                <td></td>
+                <td>653,77PLN</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
