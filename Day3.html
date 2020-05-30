@@ -20,22 +20,26 @@
         <ol>
             <li id="user_data">
                 <span>Create an account for more of my content:</span><br><br>
-                <label for="username"><strong>Username:</strong></label>
+                <label for="username"><strong>Username (max 16 characters):</strong></label>
                 <!-- <label> allows us to connect written text to textbox -->
 
-                <input type="text" name="username" id="username">
-                <!-- First type of input that is text. Allows user to input any kind of text. -->
-                <!-- Attribute "for" from <label> is connected to <input> "id" -->
+                <input type="text" name="username" id="username" required maxlength="16" pattern="[a-zA-Z0-9]+">
+                <!-- First type of input that is text. Allows user to input any kind of text.
+                     Attribute "for" from <label> is connected to <input> "id"
+                     attribute "required" tells us that this input needs to be filled before proceeding. Otherwise we get alert from browser
+                     "maxlength" allows us to set boundary for number of characters written into textbox
+                     "pattern" allows us to narrow characters user can use to only numbers and letters 
+                     more on regular expressions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions -->
                 <br>
                 <label for="user_pw"><strong>Password:</strong></label>
-                <input type="password" name="user_pw" id="user_pw">
+                <input type="password" name="user_pw" id="user_pw" required>
                 <!-- "password" type provide us with textbox which data is hidden for writer -->
                 <br><br> 
             </li>
 
             <li id="experience">
                 <label for="exp_years">Tell me how long have you been playing games already:</label><br>
-                <input type="number" name="exp_years" id="exp_years" step="1">
+                <input type="number" name="exp_years" id="exp_years" step="1" min="0" max="100">
                 <!-- Number type that allows only numerical values. Also with arrows on right to increse or decrease number by "step" value.-->
                 <br><br>
             </li>
