@@ -6,133 +6,143 @@
     <title>Day 3 - still HTML</title>
 </head>
 <body>
-    <a href="./index.html">Main Menu</a> | <a href="Day1.html">Day 1</a> | <a href="Day2.html">Day 2</a> | <a href="Day3.html">Day 3</a>
-    <h1>Day 3</h1>
-    First of all I am frustrated to change navigation bar in all files seperately but i can't find good way to put it into JavaScript. Need to take care of it later.<br>
-    I found some info about it <a href="https://www.xul.fr/javascript/navigation-bar.php">here</a>. I need to read it later and implemet it to pages so I won't have to change bar in all files everyday.
+    <header>
+        <nav>
+            <a href="./index.html">Main Menu</a> | <a href="Day1.html">Day 1</a> | <a href="Day2.html">Day 2</a> | <a href="Day3.html">Day 3</a> | <a href="Day4.html">Day 4</a>
+        </nav>
+        <h1>Day 3</h1>
+    </header>
+    <p>
+        First of all I am frustrated to change navigation bar in all files seperately but i can't find good way to put it into JavaScript. Need to take care of it later.<br>
+        I found some info about it <a href="https://www.xul.fr/javascript/navigation-bar.php">here</a>. I need to read it later and implemet it to pages so I won't have to change bar in all files everyday.
+    </p>
     
-    <h2>HTML forms</h2>
-    Our form is going to be game related because I play on my PC a lot.<br>
-    I wish I knew CSS to make it look at least fine. Maybe when I will start learning CSS that file will be changed.
-    <form>
-        <h3 id="first_form">Tell me more about your gaming experience</h3>
+    <main>
+        <h2>HTML forms</h2>
+        Our form is going to be game related because I play on my PC a lot.<br>
+        I wish I knew CSS to make it look at least fine. Maybe when I will start learning CSS that file will be changed.
+        <form>
+            <h3 id="first_form">Tell me more about your gaming experience</h3>
 
-        <ol>
-            <li id="user_data">
-                <span>Create an account for more of my content:</span><br><br>
-                <label for="username"><strong>Username (max 16 characters):</strong></label>
-                <!-- <label> allows us to connect written text to textbox -->
+            <ol>
+                <li id="user_data">
+                    <span>Create an account for more of my content:</span><br><br>
+                    <label for="username"><strong>Username (max 16 characters):</strong></label>
+                    <!-- <label> allows us to connect written text to textbox -->
 
-                <input type="text" name="username" id="username" required maxlength="16" pattern="[a-zA-Z0-9]+">
-                <!-- First type of input that is text. Allows user to input any kind of text.
-                     Attribute "for" from <label> is connected to <input> "id"
-                     attribute "required" tells us that this input needs to be filled before proceeding. Otherwise we get alert from browser
-                     "maxlength" allows us to set boundary for number of characters written into textbox
-                     "pattern" allows us to narrow characters user can use to only numbers and letters 
-                     more on regular expressions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions -->
-                <br>
-                <label for="user_pw"><strong>Password:</strong></label>
-                <input type="password" name="user_pw" id="user_pw" required>
-                <!-- "password" type provide us with textbox which data is hidden for writer -->
-                <br><br> 
-            </li>
+                    <input type="text" name="username" id="username" required maxlength="16" pattern="[a-zA-Z0-9]+">
+                    <!-- First type of input that is text. Allows user to input any kind of text.
+                        Attribute "for" from <label> is connected to <input> "id"
+                        attribute "required" tells us that this input needs to be filled before proceeding. Otherwise we get alert from browser
+                        "maxlength" allows us to set boundary for number of characters written into textbox
+                        "pattern" allows us to narrow characters user can use to only numbers and letters 
+                        more on regular expressions: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions -->
+                    <br>
+                    <label for="user_pw"><strong>Password:</strong></label>
+                    <input type="password" name="user_pw" id="user_pw" required>
+                    <!-- "password" type provide us with textbox which data is hidden for writer -->
+                    <br><br> 
+                </li>
 
-            <li id="experience">
-                <label for="exp_years">Tell me how long have you been playing games already:</label><br>
-                <input type="number" name="exp_years" id="exp_years" step="1" min="0" max="100">
-                <!-- Number type that allows only numerical values. Also with arrows on right to increse or decrease number by "step" value.-->
-                <br><br>
-            </li>
+                <li id="experience">
+                    <label for="exp_years">Tell me how long have you been playing games already:</label><br>
+                    <input type="number" name="exp_years" id="exp_years" step="1" min="0" max="100">
+                    <!-- Number type that allows only numerical values. Also with arrows on right to increse or decrease number by "step" value.-->
+                    <br><br>
+                </li>
 
-            <li id="g_type">
-                <label for="gamer_type">How hardcore gamer you are?</label><br>
-                <span><strong>Casual</strong></span>
-                <input type="range" name="gamer_type" id="gamer_type" min="0" max="10" step="0.5">
-                <span><strong>Hardcore</strong></span>
-                <!-- "range" type allows us to create slider with min:step:max scale -->
-                <br><br>
-            </li>
+                <li id="g_type">
+                    <label for="gamer_type">How hardcore gamer you are?</label><br>
+                    <span><strong>Casual</strong></span>
+                    <input type="range" name="gamer_type" id="gamer_type" min="0" max="10" step="0.5">
+                    <span><strong>Hardcore</strong></span>
+                    <!-- "range" type allows us to create slider with min:step:max scale -->
+                    <br><br>
+                </li>
 
-            <li>
-                <span>Choose game genres you like:</span><br>
-                <ul>
-                    <li>
-                        <label for="rpg">Role-playing</label>
-                        <input type="checkbox" name="genre" id="rpg" value="rpg">
-                    </li>
-                    <li>
-                        <label for="action">Action</label>
-                        <input type="checkbox" name="genre" id="action" value="action">
-                    </li>
-                    <li>
-                        <label for="adventure">Adventure</label>
-                        <input type="checkbox" name="genre" id="adventure" value="adventure">
-                    </li>
-                    <li>
-                        <label for="simulation">Simulation</label>
-                        <input type="checkbox" name="genre" id="simulation" value="simulation">
-                    </li>
-                    <li>
-                        <label for="strategy">Strategy</label>
-                        <input type="checkbox" name="genre" id="strategy" value="strategy">
-                    </li>
-                    <li>
-                        <label for="sport">Sport</label>
-                        <input type="checkbox" name="genre" id="sport" value="sport">
-                    </li>
-                    <li>
-                        <label for="ilde">Idle</label>
-                        <input type="checkbox" name="genre" id="idle" value="idle">
-                    </li>
-                </ul>
-                <!-- Here i created another list but i think simple <br> with checkbox before label would be better. Instead of points you would have checkboxes. -->
-                <br>
-            </li>
+                <li>
+                    <span>Choose game genres you like:</span><br>
+                    <ul>
+                        <li>
+                            <label for="rpg">Role-playing</label>
+                            <input type="checkbox" name="genre" id="rpg" value="rpg">
+                        </li>
+                        <li>
+                            <label for="action">Action</label>
+                            <input type="checkbox" name="genre" id="action" value="action">
+                        </li>
+                        <li>
+                            <label for="adventure">Adventure</label>
+                            <input type="checkbox" name="genre" id="adventure" value="adventure">
+                        </li>
+                        <li>
+                            <label for="simulation">Simulation</label>
+                            <input type="checkbox" name="genre" id="simulation" value="simulation">
+                        </li>
+                        <li>
+                            <label for="strategy">Strategy</label>
+                            <input type="checkbox" name="genre" id="strategy" value="strategy">
+                        </li>
+                        <li>
+                            <label for="sport">Sport</label>
+                            <input type="checkbox" name="genre" id="sport" value="sport">
+                        </li>
+                        <li>
+                            <label for="ilde">Idle</label>
+                            <input type="checkbox" name="genre" id="idle" value="idle">
+                        </li>
+                    </ul>
+                    <!-- Here i created another list but i think simple <br> with checkbox before label would be better. Instead of points you would have checkboxes. -->
+                    <br>
+                </li>
 
-            <li>
-                <span>Do you use platforms such as Steam, Epic games, Ubisoft, etc.?</span><br>
-                <input type="radio" id="yes" name="platforms" value="yes">
-                <label for="yes">Yes</label>
-                <input type="radio" id="no" name="platforms" value="no">
-                <label for="no">No</label>
-                <!-- "radio" type allows us for "choose from" where user can select only one answer -->
-                <br><br>
-            </li>
+                <li>
+                    <span>Do you use platforms such as Steam, Epic games, Ubisoft, etc.?</span><br>
+                    <input type="radio" id="yes" name="platforms" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="platforms" value="no">
+                    <label for="no">No</label>
+                    <!-- "radio" type allows us for "choose from" where user can select only one answer -->
+                    <br><br>
+                </li>
 
-            <li>
-                <label for="platform">What type of platform do you use?</label><br>
-                <select id="platform" name="platform">
-                    <option value="pc">PC</option>
-                    <option value="xbox">XBox</option>
-                    <option value="ps">PlayStation</option>
-                </select>
-                <!-- <select> allows us to create dropdoen menu with fixed choices in <option> tags -->
-                <br><br>
-            </li>
+                <li>
+                    <label for="platform">What type of platform do you use?</label><br>
+                    <select id="platform" name="platform">
+                        <option value="pc">PC</option>
+                        <option value="xbox">XBox</option>
+                        <option value="ps">PlayStation</option>
+                    </select>
+                    <!-- <select> allows us to create dropdoen menu with fixed choices in <option> tags -->
+                    <br><br>
+                </li>
 
-            <li>
-                <label for="new_game">Tell me what new game would you like to try next? You can choose one from dropdown list or write down name that is not included.</label><br>
-                <input type="text" list="game_l" name="new_game" id="new_game">
-                <datalist id="game_l">
-                    <option value="Elder Scrolls Online"></option>
-                    <option value="League of Legends"></option>
-                    <option value="SMITE"></option>
-                    <option value="Borderlands"></option>
-                    <option value="Terraria"></option>
-                </datalist>
-                <!-- <datalist> creates dropdown list like <select> but allows user to provide new data that is not included in options -->
-                <br><br>
-            </li>
+                <li>
+                    <label for="new_game">Tell me what new game would you like to try next? You can choose one from dropdown list or write down name that is not included.</label><br>
+                    <input type="text" list="game_l" name="new_game" id="new_game">
+                    <datalist id="game_l">
+                        <option value="Elder Scrolls Online"></option>
+                        <option value="League of Legends"></option>
+                        <option value="SMITE"></option>
+                        <option value="Borderlands"></option>
+                        <option value="Terraria"></option>
+                    </datalist>
+                    <!-- <datalist> creates dropdown list like <select> but allows user to provide new data that is not included in options -->
+                    <br><br>
+                </li>
 
-            <li>
-                <label for="feedback">Please tell me how else I can improve my form.</label><br>
-                <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
-                <!-- <textarea> creates place for user to provide longer text. We can set its size by "rows" and "cols" attributes -->
-            </li>
-        </ol>
+                <li>
+                    <label for="feedback">Please tell me how else I can improve my form.</label><br>
+                    <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+                    <!-- <textarea> creates place for user to provide longer text. We can set its size by "rows" and "cols" attributes -->
+                </li>
+            </ol>
 
-        <input type="submit" value="Send">
-        <!-- Type "submit" makes button to submit whole form. Default value is "Submit" -->
-    </form>
+            <input type="submit" value="Send">
+            <!-- Type "submit" makes button to submit whole form. Default value is "Submit" -->
+        </form>
+    </main>
+    <footer>
+    </footer>
 </body>
 </html>
