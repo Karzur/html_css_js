@@ -3,40 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 4</title>
+    <title>Day 4 & 5</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <!-- Linking font from external website -->
     <style>
         h1 {
-            font-size: 40px;
+            font-size: 40px; /* sets size of h1 font to 40 pixels */
         }
         h2 {
-            color: red;
-            font-family: Lobster, sans-serif;
+            color: navy; /* sets color of h1 to red */
+            font-family: Lobster, sans-serif; /* sets font for h2 header from external website linked above (in case Lobster won't work, page will load sans-serif) */
         }
         .blue-text {
-            color: blue;
-            font-family: monospace;
+            color: blue; /* sets color of text to blue */
+            font-family: monospace; /* sets text font to monospace */
         }
         .small-image {
-            width: 100px;
+            width: 100px; /* sets image width to 100px (not used in file) */
+            border-radius: 50%; /* sets radius of image border to 50% */
         }
         .thick-green-border {
-            border-color: green;
-            border-width: 10px;
-            border-style: solid;
+            border-color: greenyellow; /* sets color of border to green */
+            border-width: 5px; /* sets border thickness */
+            border-style: solid; /* sets type of border */
+            border-radius: 10px; /* sets how round border corners are */
+        }
+        .grey-background {
+            background-color: grey;
+        }
+        #css_freecodecamp {
+            background-color: seagreen;
+            padding: 20px;
+            margin: 30px;
+        }
+        #H_css_intro {
+            background-color: oldlace;
+            padding: 30px;
+            margin: 20px;
+        }
+        #css_intro {
+            background-color: tomato;
+            padding: 30px;
+            margin: 20px;
+        }
+        [type="radio"] {
+            margin: 20px 0px 20px 0px;
+        }
+        a {
+            color: navy;
         }
     </style>
     <!-- <style> tag allows us to create set of styles that we will use in our document. 
          "h1" or "h2" tells us that all settings in {} will be applied to given tag. 
-         ".blue-text" creates class that we can use in different tags allowing to use predefined settings in different places -->
+         ".blue-text" creates class that we can use in different tags allowing to use predefined settings in different places
+         tag names allows to write styles for given tags; when we add "." we create class that can be used in any tag; with"#" we define style for given "id" attribute -->
 </head>
 <body>
     <header>
         <nav>
             <a href="./index.html">Main Menu</a> | <a href="Day1.html">Day 1</a> | <a href="Day2.html">Day 2</a> | <a href="Day3.html">Day 3</a> | <a href="Day4.html">Day 4</a>
         </nav>
-        <h1 class="blue-text">Day 4</h1> <!-- style attribute is CSS element allowing us to change header color -->
+        <h1 class="blue-text">Day 4 & 5</h1>
+        <!-- style attribute is CSS element allowing us to change header color -->
     </header>
     
     <main>
@@ -46,7 +74,7 @@
                 <p>This part of tutorial shows only dividing tags and how to use them in already prepared code. 
                 I am going to fix code from day 3 then and list all new tags in this paragraph.</p>
 
-                <ul class="thick-green-border">
+                <ul class="thick-green-border grey-background">
                     <li><code>&ltheader&gt</code> container for navigational links and introductory content;</li>
                     <li><code>&ltnav&gt</code> is used to define a block of navigation links such as menus and tables of contents;</li>
                     <li><code>&ltmain&gt</code> is used to encapsulate the dominant content within a webpage;</li>
@@ -71,12 +99,30 @@
                     From what I see CSS is just set of attributes that we can use on any tags we want or set it for selected tags.
                     CSS allows for example to change color, fornt or forn size of any text we write. 
                     <br> <a href="https://fonts.google.com/">That</a> website provide us with fonts on free licene that we can use in our home projects.
+                    <br>
+                    This part will be used especially for understanding "padding" and "margin" attributes.
+                    Text below is just to check how to use 2 classes in one tag.
+
+                    <br><br><em>"An element's padding controls the amount of space between the element's content and its border."</em>
+                    <br><em>"An element's margin controls the amount of space between an element's border and surrounding elements."</em>
+                </p>
+                <span class="blue-text thick-green-border">Exemplary text</span>
+                <br><br>In seperate file i copied <a href="Penguin.html">penguin site</a> from tutorial because it looks awesome and shows all necessary examples for css.
+                <!-- To add multiple classes we need to write them in one "" with space between -->
+            </article>
+            <h2>Moving to browser learning</h2>
+            <article>
+                <p>
+                    Due to long time spent on editing additional html files I decided to learn only through <a href=" https://www.freecodecamp.org/">Freecodecamp</a> website.
+                    This repository will contain only additional files which I want to save for future use.
+                    I will also add page witch will hold all progress of my learning. (<a href="Progress.html">here</a>)
                 </p>
             </article>
         </section>
     </main>
     
     <foot>
+        <br>
         Site that needs to be read but i can't find time for that.<br>
         <a href="https://www.codecademy.com/articles/http-requests">Http requests</a>
     </foot>
